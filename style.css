@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-size: 14px;
+}
+
+.wrapper{
+    width: 500px;
+    height: 400px;
+    border:1px solid #ccc;
+}
+
+.ulist{
+    display: flex;
+    height: 50px;
+}
+.ulist li{
+    flex:1;
+    text-align: center;
+}
+
+.olist li{
+    height: 350px;
+    width: 500px;
+    background: #cfc;
+    text-align:center;
+    line-height:350px;
+    display: none;
+}
+.ccc{
+    background: #ccc;
+}

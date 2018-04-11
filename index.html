@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="ulist">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ol class="olist">
+            <li>数学</li>
+            <li>语文</li>
+            <li>英语</li>
+            <li>微积分</li>
+        </ol>
+    </div>
+    <script>
+
+    var ulist=document.getElementById('ulist'),
+    lis=document.querySelectorAll('li');
+    lis[0].className='ccc';
+    for(var i=0;i<lis.length;i++){
+        lis[i].index=i;
+        lis[i].onclick=function(){
+            for(var i=0;i<lis.length;i++){
+                lis[i].className='';
+            }
+            lis[this.index].className='ccc';
+        }
+    }
+
+
+
+
+    </script>
+</body>
+</html>
